@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunker Generate Person</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section id="drop-area">
+            <form class="my-form">
+                <p>Загрузите данные с помощью диалога выбора файлов или перетащив нужные изображения в выделенную
+                    область
+                    (формат .txt)</p>
+                <input type="file" id="fileElem" multiple accept="text/*" onchange="handleFiles(this.files)">
+                <label class="button" for="fileElem">Выбрать файл</label>
+
+            </form>
+            <div id="gallery"></div>
+        </section>
+
+        <label for="title" class="title__label">Название файлов: </label>
+        <input type="text" name="title" id="title" value="Игра1">
+
+        <label for="person" class="person__label">Количество персонажей: </label>
+        <input type="number" name="person" id="person" value="1">
+
+        <fieldset class="fieldset">
+            <legend>Название характеристик: </legend>
+            <input type="radio" name="radioTitle" id="radioTitle">
+            <label for="radioTitle"> в первой строке файла</label> 
+            <input type="radio" name="radioTitle" id="radioName" checked>
+            <label for="radioName"> в названии файла</label> 
+
+        </fieldset>
+       
+        <button class="button generate">Генерировать</button>
+    </main>
+
+
+    <script src="action.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    margin: 100px auto;
+
+}
+
+#drop-area {
+    box-sizing: border-box;
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 480px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#drop-area.highlight {
+    border-color: purple;
+}
+
+p {
+    margin-top: 0;
+}
+
+.my-form {
+    margin-bottom: 10px;
+}
+
+#gallery {
+    margin-top: 10px;
+}
+
+#gallery img {
+    width: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
+.generate {
+   font-size: 20px;
+}
+
+#person {
+    width: 100px;
+    font: inherit;
+
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#title {
+    width: 100px;
+    font: inherit;
+
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#fileElem {
+    display: none;
+}
+
+.fieldset {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
